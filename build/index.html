@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+  
+  <title>todo-list</title>
+<script defer src="main.js"></script></head>
+
+<!-- 1) рефакторинг кода -->
+    
+<body>
+  
+  <div class="page">
+    <div class="date">
+      <span class="date__day"></span>
+      <span class="date__time"></span>
+    </div>
+
+    <div class="todo-list _inactive">
+      <div class="block">
+        <input type="text" maxlength="100" class="input" placeholder="What needs to be done?">
+        <button class="input-btn"><img src="images/plus-solid.svg" alt="" class="icon-plus"></button>
+      </div>
+
+      <div class="todo-list__content _hide-translate-y _hide-display-n">
+        <ul class="list"></ul>
+
+        <div class="control-block">
+          <div class="control-block__content _1">
+            <div class="todos-done-block">
+              <div class="todos-done-counter-block">
+                <span class="todos-done">Done:</span>
+                <span class="todos-done-counter">0</span>
+              </div>
+            </div>
+
+            <div class="btns-block">
+              <button class="_active" id="all-btn">All</button>
+              <button id="clear-btn">Clear</button>
+              <button id="uncompleted-btn">Uncompleted</button>
+            </div>
+            <div class="todos-overall-block">
+              <div class="todos-overall-counter-block">
+                <span class="todos-overall">Overall:</span>
+                <span class="todos-overall-counter">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+ 
+</body>
+
+</html>
+
+
