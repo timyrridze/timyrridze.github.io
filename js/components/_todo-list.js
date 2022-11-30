@@ -1,6 +1,6 @@
 "use strict"; 
 
-import { bezier } from "../libraries/bezier-easing/index.js"
+import { bezier } from "../libraries/bezier-easing/bezier-easing.js"
 
 let todoListHTML = document.querySelector(".todo-list")
 let todoList = [];
